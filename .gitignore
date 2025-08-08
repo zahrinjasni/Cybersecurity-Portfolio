@@ -1,0 +1,66 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor backups
+*~ 
+*.swp
+
+# VM images / virtualization artifacts (do not commit big VM files)
+*.vdi
+*.vmdk
+*.box
+*.qcow2
+*.img
+.vagrant/
+Vagrantfile
+
+# Git LFS targeted patterns (use LFS for pcaps/isos/large binaries)
+*.pcap
+*.pcapng
+*.iso
+*.ova
+*.img
+
+# Terraform
+.terraform/
+terraform.tfstate*
+*.tfstate.backup
+
+# Credentials and keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+*.p12
+*.jks
+.env
+aws_credentials
+credentials
+
+# Logs and runtime files
+*.log
+*.core
+logs/
+tmp/
+
+# IDE/project files
+/.history/
+node_modules/
+
+# Splunk local & indexes (avoid committing local splunk dirs)
+splunk-*/var/
+splunk-*/etc/
+
+# Keep platform specific binaries out
+*.exe
+*.dll
+
+# Do not commit secrets or credentials files
+secrets/
